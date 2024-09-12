@@ -12,21 +12,17 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const mongoose_1 = __importDefault(require("mongoose"));
-const app_1 = __importDefault(require("./app"));
-const config_1 = __importDefault(require("./app/config"));
-const port = process.env.PORT || 5000;
-const startServer = () => __awaiter(void 0, void 0, void 0, function* () {
-    try {
-        yield mongoose_1.default.connect(config_1.default.database_url);
-        console.log('Connected to MongoDB');
-        app_1.default.listen(port, () => {
-            console.log(`Server is running on port ${port}`);
-        });
-    }
-    catch (error) {
-        console.error('Failed to connect to MongoDB', error);
-        process.exit(1);
-    }
+exports.ProductService = void 0;
+const product_model_1 = __importDefault(require("./product.model"));
+const addProductIntoDB = (product) => __awaiter(void 0, void 0, void 0, function* () {
+    const result = yield product_model_1.default.create(product);
+    return result;
 });
-startServer();
+const getAllProductsFromDB = () => __awaiter(void 0, void 0, void 0, function* () {
+    const result = yield product_model_1.default.find();
+    return result;
+});
+exports.ProductService = {
+    addProductIntoDB,
+    getAllProductsFromDB,
+};
