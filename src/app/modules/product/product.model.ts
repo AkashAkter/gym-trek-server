@@ -3,34 +3,46 @@ import { Product } from './product.interface';
 
 const productSchema = new Schema<Product>(
   {
-    image: {
+    name: {
       type: String,
       required: true,
     },
-    title: {
-      type: String,
+    currentPrice: {
+      type: Number,
       required: true,
     },
     price: {
       type: Number,
       required: true,
     },
-    stock: {
-      type: Number,
+    description: {
+      type: String,
       required: true,
     },
-    details: {
-      type: String,
+    productFeatures: {
+      type: [String], // Array of strings for product features
       required: true,
     },
     category: {
       type: String,
       required: true,
     },
-    tag: {
+    categoryBanner: {
       type: String,
-      default: '',
-      required: false,
+      required: true,
+    },
+    bannerImage: {
+      type: String,
+      required: true,
+    },
+    moreImages: {
+      type: [String], // Array of image URLs
+      required: true,
+    },
+    stockQuantity: {
+      type: Number,
+      required: true,
+      min: 0,
     },
   },
   {
@@ -39,5 +51,4 @@ const productSchema = new Schema<Product>(
 );
 
 const ProductModel = mongoose.model('Product', productSchema);
-
 export default ProductModel;

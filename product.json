@@ -1,0 +1,25 @@
+{
+  "name": "AmStaff Fitness SD-5000 Functional Trainer & Smith Machine",
+  "currentPrice": 3149.99,
+  "price": 4499.99,
+  "description": "The SD-5000 is a versatile strength training machine featuring a Smith machine, functional trainer, low row, and multi-grip chin-up station, built with a durable steel frame and rust-proof stainless steel uprights for comprehensive home gym workouts.",
+  "productFeatures": [
+    "All-Purpose Training Hub",
+    "Patent-Pending Cable System",
+    "Premium Aluminum Pulleys",
+    "Stainless Steel Uprights",
+    "Dual Separate Weight Stack"
+  ],
+  "category": "Strength Equipment",
+  "categoryBanner": "https://i.ibb.co.com/2W5Tzjx/Strength-Equipment.jpg",
+  "bannerImage": "https://i.ibb.co.com/pxYDBTr/1.png",
+  "moreImages": [
+    "https://i.ibb.co.com/pxYDBTr/1.png",
+    "https://i.ibb.co.com/1qhnVYW/2.png",
+    "https://i.ibb.co.com/mhLxBDk/3.png",
+    "https://i.ibb.co.com/gz2tXQ9/4.png",
+    "https://i.ibb.co.com/HF4f3qR/5.png",
+    "https://i.ibb.co.com/6v7VrWS/6.png"
+  ],
+  "stockQuantity": 0
+}

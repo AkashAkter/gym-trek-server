@@ -1,11 +1,14 @@
 export interface Product {
-  image: string;
-  title: string;
+  name: string;
+  currentPrice: number;
   price: number;
-  stock: number;
-  details: string;
+  description: string;
+  productFeatures: string[];
   category: string;
-  tag?: string;
+  categoryBanner: string;
+  bannerImage: string;
+  moreImages: string[];
+  stockQuantity: number;
 }
 
 export interface ProductOrder {
