@@ -23,7 +23,7 @@ This project is an Express application built with TypeScript, integrating MongoD
 
 ```sh
  git clone  https://github.com/AkashAkter/gym-trek-server.git
- cd gym-tre-server
+ cd gym-trek-server
 ```
 
 ## Install dependencies
