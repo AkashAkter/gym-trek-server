@@ -19,13 +19,13 @@ const port = process.env.PORT || 5000;
 const startServer = () => __awaiter(void 0, void 0, void 0, function* () {
     try {
         yield mongoose_1.default.connect(config_1.default.database_url);
-        console.log('Connected to MongoDB');
+        console.log("Connected to MongoDB");
         app_1.default.listen(port, () => {
             console.log(`Server is running on port ${port}`);
         });
     }
     catch (error) {
-        console.error('Failed to connect to MongoDB', error);
+        console.error("Failed to connect to MongoDB", error);
         process.exit(1);
     }
 });

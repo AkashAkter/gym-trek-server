@@ -1,17 +1,14 @@
-export interface Product {
-  name: string;
-  currentPrice: number;
+export interface IProduct {
+  image: string;
+  title: string;
   price: number;
-  description: string;
-  productFeatures: string[];
+  stock: number;
+  details: string;
   category: string;
-  categoryBanner: string;
-  bannerImage: string;
-  moreImages: string[];
-  stockQuantity: number;
+  tag?: string;
 }
 
-export interface ProductOrder {
+export interface IProductOrder {
   quantity: number;
   _id: string;
 }

@@ -1,65 +1,138 @@
-import { Request, Response } from 'express';
-import { ProductService } from './product.service';
-import { productValidationSchema } from './product.validation';
+import { catchAsyncError } from '../../utils/catchAsyncError';
+import sendResponse from '../../utils/sendResponse';
+import { IProductOrder } from './product.interface';
+import Product from './product.model';
+import productService from './product.service';
 
-const addProduct = async (req: Request, res: Response) => {
-  try {
-    // Directly use req.body as product data
-    const productData = req.body;
+const {
+  createProductService,
+  getAllProductService,
+  getSingleProductService,
+  updateProductService,
+  deleteProductByIdService,
+  getFeaturedProductService,
+} = productService;
 
-    if (!productData) {
-      return res.status(400).json({
-        success: false,
-        message: 'Product data is required',
-      });
+export const createProduct = catchAsyncError(async (req, res) => {
+  const { body } = req;
+  const result = await createProductService(body);
+
+  sendResponse(res, {
+    message: 'product created successfully',
+    data: result,
+    success: true,
+  });
+});
+export const getAllProduct = catchAsyncError(async (req, res) => {
+  const { result, totalDoc } = await getAllProductService(req.query);
+
+  res.json({
+    success: true,
+    message: 'successfully get all product',
+    data: result,
+    totalDoc,
+  });
+});
+export const getFeaturedProduct = catchAsyncError(async (req, res) => {
+  const result = await getFeaturedProductService(req.query);
+  sendResponse(res, {
+    success: true,
+    data: result,
+    message: 'Successfully get featured products',
+  });
+});
+export const getSingleProduct = catchAsyncError(async (req, res) => {
+  const { id } = req.params;
+
+  const result = await getSingleProductService(id);
+
+  if (!result) {
+    return sendResponse(res, {
+      success: false,
+      data: null,
+      message: `No product found for ${id}`,
+    });
+  }
+
+  res.json({
+    success: true,
+    message: 'successfully get product',
+    data: result,
+  });
+});
+
+export const updateProductByIdController = catchAsyncError(async (req, res) => {
+  const { id } = req.params;
+  const isExist = await Product.findById(id);
+  if (!isExist) {
+    return sendResponse(res, {
+      success: false,
+      data: null,
+      message: 'Product not found',
+      statusCode: 404,
+    });
+  }
+
+  const result = await updateProductService(req.body, id);
+  sendResponse(res, {
+    data: result,
+    success: true,
+    message: 'Successfully product updated',
+  });
+});
+export const deleteProductByIdController = catchAsyncError(async (req, res) => {
+  const { id } = req.params;
+  const isExist = await Product.findById(id);
+  if (!isExist) {
+    return sendResponse(res, {
+      success: false,
+      data: null,
+      message: 'Product not found',
+      statusCode: 404,
+    });
+  }
+
+  const result = await deleteProductByIdService(id);
+  sendResponse(res, {
+    data: result,
+    success: true,
+    message: 'Successfully deleted product',
+  });
+});
+
+export const confirmManyProductOrderController = catchAsyncError(
+  async (req, res) => {
+    const cartItems = req.body.cartItems as IProductOrder[];
+    for (const item of cartItems) {
+      const product = await Product.findById(item._id);
+
+      if (product) {
+        // Check if there is enough stock
+        if (product.stock >= item.quantity) {
+          product.stock -= item.quantity;
+          await product.save();
+        } else {
+          return sendResponse(res, {
+            message: `Not enough stock for ${product.title}`,
+            success: false,
+            data: null,
+            statusCode: 400,
+          });
+        }
+      } else {
+        return sendResponse(res, {
+          message: `Product ${item._id} not found`,
+          success: false,
+          data: null,
+          statusCode: 404,
+        });
+      }
     }
 
-    // Validate the product data
-    const zodParsedData = productValidationSchema.parse(productData);
-
-    // Add the product to the database
-    const result = await ProductService.addProductIntoDB(zodParsedData);
-
-    // Respond with success
-    res.status(200).json({
+    sendResponse(res, {
+      data: null,
+      message: 'successfully purchased products',
       success: true,
-      message: 'Product Added Successfully',
-      data: result,
     });
-  } catch (err) {
-    // Log the error and send a response with error details
-    console.error('Error adding product:', err);
-    res.status(500).json({
-      success: false,
-      message: 'An error occurred while adding the product',
-      error: err instanceof Error ? err.message : 'Unknown error',
-    });
-  }
-};
-
-const getAllProducts = async (req: Request, res: Response) => {
-  try {
-    // Retrieve all products from the database
-    const result = await ProductService.getAllProductsFromDB();
-
-    // Respond with success
-    res.status(200).json({
-      success: true,
-      message: 'Products Retrieved Successfully',
-      data: result,
-    });
-  } catch (err) {
-    // Log the error and send a response with error details
-    console.error('Error retrieving products:', err);
-    res.status(500).json({
-      success: false,
-      message: 'An error occurred while retrieving products',
-      error: err instanceof Error ? err.message : 'Unknown error',
-    });
-  }
-};
-
-export const ProductControllers = {
-  addProduct,
-  getAllProducts,
-};
+  },
+);

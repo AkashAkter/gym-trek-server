@@ -1,48 +1,36 @@
 import mongoose, { Schema } from 'mongoose';
-import { Product } from './product.interface';
+import { IProduct } from './product.interface';
 
-const productSchema = new Schema<Product>(
+const productSchema = new Schema<IProduct>(
   {
-    name: {
+    image: {
       type: String,
       required: true,
     },
-    currentPrice: {
-      type: Number,
+    title: {
+      type: String,
       required: true,
     },
     price: {
       type: Number,
       required: true,
     },
-    description: {
-      type: String,
+    stock: {
+      type: Number,
       required: true,
     },
-    productFeatures: {
-      type: [String], // Array of strings for product features
+    details: {
+      type: String,
       required: true,
     },
     category: {
       type: String,
       required: true,
     },
-    categoryBanner: {
+    tag: {
       type: String,
-      required: true,
-    },
-    bannerImage: {
-      type: String,
-      required: true,
-    },
-    moreImages: {
-      type: [String], // Array of image URLs
-      required: true,
-    },
-    stockQuantity: {
-      type: Number,
-      required: true,
-      min: 0,
+      default: '',
+      required: false,
     },
   },
   {
@@ -50,5 +38,6 @@ const productSchema = new Schema<Product>(
   },
 );
 
-const ProductModel = mongoose.model('Product', productSchema);
-export default ProductModel;
+const Product = mongoose.model('Product', productSchema);
+
+export default Product;

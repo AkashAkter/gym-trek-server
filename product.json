@@ -1,25 +1,316 @@
-{
-  "name": "AmStaff Fitness SD-5000 Functional Trainer & Smith Machine",
-  "currentPrice": 3149.99,
-  "price": 4499.99,
-  "description": "The SD-5000 is a versatile strength training machine featuring a Smith machine, functional trainer, low row, and multi-grip chin-up station, built with a durable steel frame and rust-proof stainless steel uprights for comprehensive home gym workouts.",
-  "productFeatures": [
-    "All-Purpose Training Hub",
-    "Patent-Pending Cable System",
-    "Premium Aluminum Pulleys",
-    "Stainless Steel Uprights",
-    "Dual Separate Weight Stack"
-  ],
-  "category": "Strength Equipment",
-  "categoryBanner": "https://i.ibb.co.com/2W5Tzjx/Strength-Equipment.jpg",
-  "bannerImage": "https://i.ibb.co.com/pxYDBTr/1.png",
-  "moreImages": [
-    "https://i.ibb.co.com/pxYDBTr/1.png",
-    "https://i.ibb.co.com/1qhnVYW/2.png",
-    "https://i.ibb.co.com/mhLxBDk/3.png",
-    "https://i.ibb.co.com/gz2tXQ9/4.png",
-    "https://i.ibb.co.com/HF4f3qR/5.png",
-    "https://i.ibb.co.com/6v7VrWS/6.png"
-  ],
-  "stockQuantity": 0
-}
+[
+  {
+    "image": "https://i.ibb.co.com/pxYDBTr/1.png",
+    "title": "AmStaff Fitness SD-5000 Functional Trainer & Smith Machine",
+    "price": 3149.99,
+    "stock": 20,
+    "details": "The SD-5000 is a versatile strength training machine featuring a Smith machine, functional trainer, low row, and multi-grip chin-up station, built with a durable steel frame and rust-proof stainless steel uprights for comprehensive home gym workouts.",
+    "category": "Strength Equipment"
+  },
+
+  {
+    "image": "https://www.fitnessavenue.ca/cdn/shop/products/3powerliftingbelt-logo-1000_0f97377f-78f1-459c-abe0-00180e417cc7-855635.jpg?v=1666199305&width=840",
+    "title": "AmStaff Fitness 10mm Lever Buckle Powerlifting Belt",
+    "price": 49.99,
+    "stock": 8,
+    "details": "A 10mm lever buckle powerlifting belt providing support and stability during heavy lifts.",
+    "category": "Fitness Accessories"
+  },
+
+  {
+    "image": "https://www.fitnessavenue.ca/cdn/shop/products/Hurdlelast_3c3376d7-8533-4c50-9f5b-3253a8c52f79.jpg?v=1664554282&width=840",
+    "title": "Hurdles | Available sizes: 6\", 9\", 12\", 15\" & 18\"",
+    "price": 59.99,
+    "stock": 10,
+    "details": "Adjustable hurdles available in various sizes, ideal for agility training and conditioning workouts.",
+    "category": "Conditioning & Bodyweight"
+  },
+
+  {
+    "image": "https://www.fitnessavenue.ca/cdn/shop/files/Color-Bumper-Plates_Set-370lbs.jpg?v=1700249993&width=840",
+    "title": "AmStaff Fitness Coloured Bumper Plates",
+    "price": 199.99,
+    "stock": 10,
+    "details": "These coloured bumper plates are ideal for weightlifting, offering durability and vibrant colors for easy weight identification.",
+    "category": "Weightlifting"
+  },
+
+  {
+    "image": "https://www.fitnessavenue.ca/cdn/shop/files/PR185-AmStaffFitnessSD-3000SmithMachine_Main.jpg?v=1718997683&width=640",
+    "title": "AmStaff Fitness SD-3000 All-In-One Smith Machine",
+    "price": 2609.99,
+    "stock": 20,
+    "details": "The SD-3000 is a heavy-duty, versatile strength training machine perfect for any home gym. Engineered with durable materials, it boasts a robust 750 lbs static weight capacity. Featuring a reliable 1:1 weight stack and pulley ratio, it offers precise resistance adjustments for balanced workouts. The SD-3000 includes a Smith machine, functional trainer, crossover pulley, dip station, and squat rack, with additional attachments available.",
+    "category": "Strength Equipment"
+  },
+
+  {
+    "image": "https://st4.depositphotos.com/17828278/24401/v/450/depositphotos_244011872-stock-illustration-image-vector-symbol-missing-available.jpg",
+    "title": "AmStaff FT-600 Dual Stack Multi-Functional Trainer",
+    "price": 2999.99,
+    "stock": 15,
+    "details": "The FT-600 offers a versatile multi-functional training experience with dual weight stacks, allowing for a wide range of exercises to enhance your home gym setup.",
+    "category": "Strength Equipment"
+  },
+
+  {
+    "image": "https://www.fitnessavenue.ca/cdn/shop/products/AmStaffFitnessSFT200CommercialFunctionalTrainer1000x1000.jpg?v=1659028687&width=840",
+    "title": "AmStaff Fitness SFT200 Commercial Functional Trainer",
+    "price": 3499.99,
+    "stock": 10,
+    "details": "The SFT200 is a high-performance commercial functional trainer featuring robust build quality and versatile workout options for intensive training.",
+    "category": "Strength Equipment"
+  },
+
+  {
+    "image": "https://www.fitnessavenue.ca/cdn/shop/products/2107.3.jpg?v=1669060995&width=840",
+    "title": "AmStaff Fitness DF2107-R Single Stack Functional Trainer",
+    "price": 2299.99,
+    "stock": 25,
+    "details": "This multi-purpose AmStaff Fitness Pulley Station is perfect for gyms looking to add an additional compact cable station, or home users looking for the ultimate single cable station; also a great rehab machine. Its functionality is unlimited with the addition of just a few cable attachments, the perfect addition to your fitness facility or home gym.",
+    "category": "Strength Equipment"
+  },
+
+  {
+    "image": "https://www.fitnessavenue.ca/cdn/shop/files/TB59B---Leg-Press-Machine__01.jpg?v=1692740934&width=640",
+    "title": "AmStaff Fitness TB59B Commercial Leg Press / Hack Squat Machine",
+    "price": 2799.99,
+    "stock": 15,
+    "details": "Build an explosive lower body with the AmStaff Fitness plate-loaded TB59B Commercial Leg Press / Hack Squat machine. The 2-in-1 adjustable design allows you to effectively perform multiple exercises and develop the strength of the quads, glutes, hamstrings, and calves muscles. This lower-body exercise machine is a premium construction of 4 x 2 heavy-duty steel tubes that can safely support up to 1500lbs. It features an oversized diamond-plated footrest for multiple foot positions, longer and wider 2.5” thick support padding for shoulders and lower back areas for a comfortable workout experience, and undercarriage dual-weight sleeves that perfectly fit Olympic-style plates.",
+    "category": "Strength Equipment"
+  },
+
+  {
+    "image": "https://www.fitnessavenue.ca/cdn/shop/files/PR188-AmStaffFitnessHipThrustHM500_Main.jpg?v=1719260080&width=640",
+    "title": "AmStaff Fitness HM500 Commercial Hip Thrust Machine",
+    "price": 2399.99,
+    "stock": 10,
+    "details": "The AmStaff Fitness Hip Thrust HM500 is the ultimate choice for fitness enthusiasts seeking to enhance their glute and core strength with precision and efficiency. Perfectly suited for both home and commercial gym environments, this machine is meticulously designed to deliver a smooth, targeted workout that isolates your glutes while boosting core stability.",
+    "category": "Strength Equipment"
+  },
+
+  {
+    "image": "https://www.fitnessavenue.ca/cdn/shop/files/OLY039-OpenHexBarwithPremiumHandle_MainFINAL.jpg?v=1721851572&width=840",
+    "title": "AmStaff Fitness Open Trap Bar",
+    "price": 349.99,
+    "stock": 20,
+    "details": "The Open Trap Bar is designed for effective weightlifting with a unique shape for better lifting mechanics and reduced strain.",
+    "category": "Weightlifting"
+  },
+
+  {
+    "image": "https://www.fitnessavenue.ca/cdn/shop/files/AmStaff-Fitness-3in1-Adjustable-Dumbbell-Kettlebell-Barbell-Dum074-Main-3.jpg?v=1695527452&width=840",
+    "title": "AmStaff Fitness 3-in-1 Adjustable Dumbbell/Kettlebell/Barbell Set (2-43lbs)",
+    "price": 349.99,
+    "stock": 10,
+    "details": "This 3-in-1 adjustable set includes dumbbells, kettlebells, and barbells for versatile and space-saving strength training.",
+    "category": "Weightlifting"
+  },
+
+  {
+    "image": "https://www.fitnessavenue.ca/cdn/shop/files/DUM07642lb_19kg_3-in-1AdjustableDumbbell_MainImage.jpg?v=1708547606&width=840",
+    "title": "AmStaff 3-in-1 Adjustable Weight Set",
+    "price": 2999.99,
+    "stock": 10,
+    "details": "This 3-in-1 weight set is adjustable to suit various exercises, including dumbbell, kettlebell, and barbell workouts.",
+    "category": "Weightlifting"
+  },
+
+  {
+    "image": "https://www.fitnessavenue.ca/cdn/shop/files/Amstaff-Fitness-CPU-Dumbbell-Set-5-50lbs-4000x4000.jpg?v=1699036940&width=840",
+    "title": "AmStaff Fitness Urethane (CPU) Dumbbell Sets",
+    "price": 899.99,
+    "stock": 10,
+    "details": "Urethane dumbbell sets designed for durability and a premium workout experience, featuring a sleek and professional finish.",
+    "category": "Weightlifting"
+  },
+
+  {
+    "image": "https://www.fitnessavenue.ca/cdn/shop/products/AmStaffFitnessTR201CMedicineBallRack-5Ball.jpg?v=1659127020&width=840",
+    "title": "AmStaff Fitness TR201C Medicine Ball Rack - 5 Ball",
+    "price": 149.99,
+    "stock": 10,
+    "details": "A sturdy rack designed to hold up to 5 medicine balls, keeping your workout space organized and accessible.",
+    "category": "Conditioning & Bodyweight"
+  },
+
+  {
+    "image": "https://www.fitnessavenue.ca/cdn/shop/files/AmStaff-Fitness-Medicine-Balls---6lb.jpg?v=1706649752&width=840",
+    "title": "AmStaff Fitness Pro Wall Balls",
+    "price": 99.99,
+    "stock": 10,
+    "details": "High-quality wall balls designed for conditioning exercises, providing durability and a consistent bounce.",
+    "category": "Conditioning & Bodyweight"
+  },
+
+  {
+    "image": "https://www.fitnessavenue.ca/cdn/shop/products/PowerChute-345009.jpg?v=1667420084&width=240",
+    "title": "Power Chute Large 52\"",
+    "price": 79.99,
+    "stock": 10,
+    "details": "A large power chute designed to improve speed and explosive power through resistance training.",
+    "category": "Conditioning & Bodyweight"
+  },
+
+  {
+    "image": "https://www.fitnessavenue.ca/cdn/shop/products/1T2A9676maincopy.jpg?v=1666202425&width=840",
+    "title": "Plyometric Box Set: 12\" 18\" 24\"",
+    "price": 139.99,
+    "stock": 10,
+    "details": "A set of three plyometric boxes of varying heights for a versatile and effective plyometric workout.",
+    "category": "Conditioning & Bodyweight"
+  },
+
+  {
+    "image": "https://www.fitnessavenue.ca/cdn/shop/files/AG041-AG044-AmStaffFitness3-in-1Non-SlipWoodPlyometricBox_01.jpg?v=1714663985&width=840",
+    "title": "AmStaff Fitness 3-in-1 Non-Slip Wood Plyometric Boxes",
+    "price": 229.99,
+    "stock": 10,
+    "details": "A set of 3 non-slip wooden plyometric boxes for safe and effective plyometric training.",
+    "category": "Conditioning & Bodyweight"
+  },
+
+  {
+    "image": "https://www.fitnessavenue.ca/cdn/shop/products/AmStaffTU020.jpg?v=1659027728&width=840",
+    "title": "AmStaff TU020A Wall Mounted Multi-Grip Chin Up Bar",
+    "price": 119.99,
+    "stock": 10,
+    "details": "A wall-mounted chin-up bar with multiple grip options, ideal for bodyweight exercises and upper body strength training.",
+    "category": "Conditioning & Bodyweight"
+  },
+
+  {
+    "image": "https://www.fitnessavenue.ca/cdn/shop/products/MID-TCR1002-AmStaff-TCR1002-Vertical-Knee-Raise-Station20221026_0051-Main.jpg?v=1671036174&width=840",
+    "title": "AmStaff TCR1002 Vertical Knee Raise Station",
+    "price": 229.99,
+    "stock": 10,
+    "details": "A vertical knee raise station designed to target core muscles with comfortable padding and durable construction.",
+    "category": "Conditioning & Bodyweight"
+  },
+
+  {
+    "image": "https://www.fitnessavenue.ca/cdn/shop/products/RBHIPSEAmStaffFitnessHipResistanceCircleBand-Setmaincopy.jpg?v=1665074020&width=840",
+    "title": "AmStaff Fitness Hip Resistance Circle Bands",
+    "price": 29.99,
+    "stock": 10,
+    "details": "Hip resistance circle bands designed to enhance lower body workouts and improve strength and flexibility.",
+    "category": "Conditioning & Bodyweight"
+  },
+
+  {
+    "image": "https://www.fitnessavenue.ca/cdn/shop/files/InterlockingTurf_5.jpg?v=1689688292&width=840",
+    "title": "Artificial Turf Tile with 20mm Rubber Underpad - 20\" x 20\"",
+    "price": 29.99,
+    "stock": 10,
+    "details": "High-quality artificial turf tile with a 20mm rubber underpad for a realistic and cushioned flooring solution.",
+    "category": "Mats & Flooring"
+  },
+
+  {
+    "image": "https://www.fitnessavenue.ca/cdn/shop/products/Bumper-Weight-Plates-45-lbs.jpg?v=1665757835&width=840",
+    "title": "Bumper Weight Plates",
+    "price": 179.99,
+    "stock": 10,
+    "details": "These bumper weight plates are designed for heavy-duty lifting, with a focus on durability and safety during workouts.",
+    "category": "Weightlifting"
+  },
+
+  {
+    "image": "https://www.fitnessavenue.ca/cdn/shop/products/InterlockingRubberTile2inx24inx7mm-GreySpeckle_main_781cdb82-696e-41c2-a80b-c0ad21ab6325-853472.jpg?v=1666199485&width=840",
+    "title": "Interlocking Rubber Tile 24\" x 24\" x 7mm",
+    "price": 19.99,
+    "stock": 15,
+    "details": "Durable interlocking rubber tiles measuring 24\" x 24\" x 7mm, perfect for creating a stable and cushioned floor surface.",
+    "category": "Mats & Flooring"
+  },
+
+  {
+    "image": "https://st4.depositphotos.com/17828278/24401/v/450/depositphotos_244011872-stock-illustration-image-vector-symbol-missing-available.jpg",
+    "title": "Ivory Wood Heavy-Duty Interlocking Foam Mat",
+    "price": 49.99,
+    "stock": 12,
+    "details": "Heavy-duty interlocking foam mat in ivory wood design, ideal for providing a comfortable and protective flooring surface.",
+    "category": "Mats & Flooring"
+  },
+
+  {
+    "image": "https://st4.depositphotos.com/17828278/24401/v/450/depositphotos_244011872-stock-illustration-image-vector-symbol-missing-available.jpg",
+    "title": "2' x 4' Black Exercise Mat",
+    "price": 39.99,
+    "stock": 18,
+    "details": "A versatile 2' x 4' black exercise mat, perfect for various workout routines and providing a stable surface.",
+    "category": "Mats & Flooring"
+  },
+
+  {
+    "image": "https://st4.depositphotos.com/17828278/24401/v/450/depositphotos_244011872-stock-illustration-image-vector-symbol-missing-available.jpg",
+    "title": "68” x 24” PVC Yoga & Pilates Mat",
+    "price": 29.99,
+    "stock": 20,
+    "details": "A durable 68” x 24” PVC yoga and Pilates mat, providing a comfortable and stable surface for exercise routines.",
+    "category": "Mats & Flooring"
+  },
+
+  {
+    "image": "https://st4.depositphotos.com/17828278/24401/v/450/depositphotos_244011872-stock-illustration-image-vector-symbol-missing-available.jpg",
+    "title": "AmStaff Ab & Back Trigger Point Stretcher",
+    "price": 39.99,
+    "stock": 14,
+    "details": "A trigger point stretcher designed to alleviate muscle tension and improve flexibility in the abs and back.",
+    "category": "Fitness Accessories"
+  },
+
+  {
+    "image": "https://st4.depositphotos.com/17828278/24401/v/450/depositphotos_244011872-stock-illustration-image-vector-symbol-missing-available.jpg",
+    "title": "Anti Burst Exercise Ball",
+    "price": 24.99,
+    "stock": 25,
+    "details": "An anti-burst exercise ball designed to enhance stability and core workouts with durable and safe material.",
+    "category": "Fitness Accessories"
+  },
+
+  {
+    "image": "https://st4.depositphotos.com/17828278/24401/v/450/depositphotos_244011872-stock-illustration-image-vector-symbol-missing-available.jpg",
+    "title": "Wooden Wobble Board with Grip",
+    "price": 29.99,
+    "stock": 16,
+    "details": "A wooden wobble board with grip designed to improve balance and coordination during workouts.",
+    "category": "Fitness Accessories"
+  },
+
+  {
+    "image": "https://st4.depositphotos.com/17828278/24401/v/450/depositphotos_244011872-stock-illustration-image-vector-symbol-missing-available.jpg",
+    "title": "Extra-Firm Grid Foam Roller Jr.",
+    "price": 34.99,
+    "stock": 22,
+    "details": "An extra-firm grid foam roller designed to target deep muscle tissue and aid in recovery.",
+    "category": "Fitness Accessories"
+  },
+
+  {
+    "image": "https://www.fitnessavenue.ca/cdn/shop/products/FR015---Pressure-Point-Massage-Stick_0100.jpg?v=1671929001&width=840",
+    "title": "Pressure Point Massage Stick",
+    "price": 19.99,
+    "stock": 12,
+    "details": "A pressure point massage stick designed to target sore muscles and improve blood flow.",
+    "category": "Fitness Accessories"
+  },
+
+  {
+    "image": "https://www.fitnessavenue.ca/cdn/shop/products/AmStaffFitnessStainlessSteelShakerBottle-Black_a0ed9989-8eba-44a9-9a72-bc73ace9ee95.jpg?v=1659128276&width=840",
+    "title": "AmStaff Fitness Stainless Steel Shaker Bottle - Black",
+    "price": 19.99,
+    "stock": 15,
+    "details": "A sleek black stainless steel shaker bottle, ideal for mixing protein shakes and beverages on the go.",
+    "category": "Fitness Accessories"
+  },
+
+  {
+    "image": "https://www.fitnessavenue.ca/cdn/shop/products/shakerbottlescuresportsworkoutbottle-500XYSB80NA-428608.jpg?v=1666199413&width=480",
+    "title": "AmStaff Fitness Shaker Bottle",
+    "price": 12.99,
+    "stock": 20,
+    "details": "A practical shaker bottle designed for convenient mixing of protein shakes and beverages.",
+    "category": "Fitness Accessories"
+  }
+]
